@@ -37,11 +37,10 @@ Instead of dumping raw notes into a single monolithic document, this template us
 
 ```text
 research-reading-log-template/
-├── paperlog.sty                  # Core styling, tcolorbox setups, and shortcut macros
-├── main.tex                      # Master dashboard, TOC, and \input{} calls
-├── references.bib                # Master BibTeX bibliography file
+├── LICENSE                       # MIT License
+├── README.md
 ├── figures/                      # Store architecture diagrams and plots here
-└── topics/                       # Modular paper folders grouped by research theme
+├── topics/                       # Modular paper folders grouped by research theme
     ├── 01_foundations/
     │   └── example_paper.tex     # Example paper note
     ├── 02_primitives/
@@ -49,7 +48,10 @@ research-reading-log-template/
     ├── 03_architectures/
     │   └── example_paper.tex
     └── 04_evaluation/
-    │   └── example_paper.tex
+        └── example_paper.tex
+├── main.tex                      # Master dashboard, TOC, and \input{} calls
+├── paperlog.sty                  # Core styling, tcolorbox setups, and shortcut macros
+└── references.bib                # Master BibTeX bibliography file
 ```
 
 ---
