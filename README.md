@@ -63,43 +63,43 @@ When adding a new paper note to a topic folder, use this standard structure:
 ```latex
 % Usage: \begin{paperbox}{Title}{Authors}{Venue & Year}{BibTeX Key}
 \begin{paperbox}
-  {Paper Title Goes Here}
-  {Author, A., Author, B., et al.}
-  {Conference / Journal 2026}
-  {citationKey2026}
-  Your dense, one-sentence takeaway summarizing the paper's primary contribution goes here.
+    {Paper Title Goes Here}
+    {Author, A., Author, B., et al.}
+    {Conference / Journal 2026}
+    {citationKey2026}
+    Your dense, one-sentence takeaway summarizing the paper's primary contribution goes here.
 \end{paperbox}
 
 \loggap
 \begin{itemize}
-  \item \textbf{The Problem:} What gap or failure in prior work motivated this paper?
-  \item \textbf{Why prior work fails:} Specifically why existing baselines fall short.
+    \item \textbf{The Problem:} What gap or failure in prior work motivated this paper?
+    \item \textbf{Why prior work fails:} Specifically why existing baselines fall short.
 \end{itemize}
 
 \logmethod
 \begin{itemize}
-  \item \textbf{The Clever Trick:} The core algorithmic shift, architectural change, or mathematical formulation.
+    \item \textbf{The Clever Trick:} The core algorithmic shift, architectural change, or mathematical formulation.
 \end{itemize}
 
 \begin{insightbox}[Core Mechanism / Key Insight]
-  Use this box to highlight a standout equation, loss function, or architecture diagram.
+    Use this box to highlight a standout equation, loss function, or architecture diagram.
 \end{insightbox}
 
 \logresults
 \begin{itemize}
-  \item \textbf{Key Findings:} Standout empirical benchmarks, theoretical guarantees, or latency/accuracy improvements.
+    \item \textbf{Key Findings:} Standout empirical benchmarks, theoretical guarantees, or latency/accuracy improvements.
 \end{itemize}
 
 \loglimitations
 \begin{itemize}
-  \item \textbf{Stated limits:} Explicit limitations acknowledged by the authors.
-  \item \textbf{My critique:} Unrealistic assumptions, edge cases, or computational overhead.
+    \item \textbf{Stated limits:} Explicit limitations acknowledged by the authors.
+    \item \textbf{My critique:} Unrealistic assumptions, edge cases, or computational overhead.
 \end{itemize}
 
 \logtakeaways
 \begin{itemize}
-  \item \textbf{Relevance:} How this connects to your current research or literature review.
-  \item \textbf{Action Items:} Specific baselines to compare against or experiments to try.
+    \item \textbf{Relevance:} How this connects to your current research or literature review.
+    \item \textbf{Action Items:} Specific baselines to compare against or experiments to try.
 \end{itemize}
 ```
 
