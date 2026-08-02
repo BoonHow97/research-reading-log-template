@@ -27,7 +27,7 @@ Instead of dumping raw notes into a single monolithic document, this template us
 1. Click the green **Use this template** button at the top right of this repository to generate your own repo.
 2. Clone your new repository:
    ```bash
-   git clone [https://github.com/BoonHow97/research-reading-log-template](https://github.com/BoonHow97/research-reading-log-template)
+   git clone https://github.com/BoonHow97/research-reading-log-template
    ```
 3. Compile `main.tex` using `latexmk` or your preferred LaTeX build engine (ensure BibTeX/Biber is enabled).
 
