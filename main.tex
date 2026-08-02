@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper]{report}
+
+% Load custom styling, boxes, and shortcuts
+\usepackage{paperlog}
+
+% Bibliography file
+\addbibresource{references.bib}
+
+% --- DOCUMENT METADATA ---
+\title{Research Paper Reading Log\\\large A Modular LaTeX Template}
+\author{Your Name Here}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% ==============================================================================
+% RESEARCH READING LOG
+% Organize your notes by broad research themes or methodologies using \chapter{},
+% and add individual paper notes inside their respective subdirectories using \input{}.
+% ==============================================================================
+
+% --- TOPIC 1: FOUNDATIONS & THEORETICAL FRAMEWORKS ---
+\chapter{Foundations \& Theoretical Frameworks}
+% Example input call (uncomment and replace with your paper file paths):
+\input{topics/01_foundations/example_paper}
+
+
+% --- TOPIC 2: CORE PRIMITIVES & PROTOCOLS ---
+\chapter{Core Primitives \& Protocols}
+% \input{topics/02_primitives/example_paper}
+
+
+% --- TOPIC 3: ARCHITECTURES & SYSTEMS ---
+\chapter{Architectures \& Systems}
+% \input{topics/03_architectures/example_paper}
+
+
+% --- TOPIC 4: EVALUATION & BENCHMARKS ---
+\chapter{Evaluation \& Benchmarks}
+% \input{topics/04_evaluation/example_paper}
+
+
+% ==============================================================================
+% BIBLIOGRAPHY
+% ==============================================================================
+\newpage
+\printbibliography[heading=bibintoc, title={References}]
+
+\end{document}
