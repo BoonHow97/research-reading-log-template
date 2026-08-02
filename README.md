@@ -27,7 +27,7 @@ Instead of dumping raw notes into a single monolithic document, this template us
 1. Click the green **Use this template** button at the top right of this repository to generate your own repo.
 2. Clone your new repository:
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
+   git clone [https://github.com/BoonHow97/research-reading-log-template](https://github.com/BoonHow97/research-reading-log-template)
    ```
 3. Compile `main.tex` using `latexmk` or your preferred LaTeX build engine (ensure BibTeX/Biber is enabled).
 
@@ -43,10 +43,13 @@ research-reading-log-template/
 ├── figures/                      # Store architecture diagrams and plots here
 └── topics/                       # Modular paper folders grouped by research theme
     ├── 01_foundations/
-    │   └── example_paper.tex     # Polished example paper note
+    │   └── example_paper.tex     # Example paper note
     ├── 02_primitives/
+    │   └── example_paper.tex
     ├── 03_architectures/
+    │   └── example_paper.tex
     └── 04_evaluation/
+    │   └── example_paper.tex
 ```
 
 ---
