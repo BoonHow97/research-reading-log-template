@@ -30,41 +30,41 @@
 % --- 1. PAPER HEADER BOX ---
 % Usage: \begin{paperbox}{Title}{Authors}{Venue & Year}{BibTeX Key}
 \newtcolorbox{paperbox}[4]{
-  enhanced,
-  breakable=false,
-  colback=LogBackground,
-  colframe=LogPrimary,
-  coltitle=white,
-  fonttitle=\bfseries\Large,
-  before={\phantomsection\addcontentsline{toc}{subsection}{#1}\vspace{0.5em}},
-  % \hypersetup{citecolor=white} forces the citation link to render bright white on the blue banner
-  title={#1 \hfill \normalsize\normalfont\hypersetup{citecolor=white}\textbf{\texttt{\cite{#4}}}},
-  boxrule=1.2pt,
-  arc=5pt,
-  left=14pt, right=14pt, top=10pt, bottom=10pt,
-  before upper={
-    \noindent\textbf{Authors:} #2 \hfill \textbf{Venue:} #3\par
-    \vspace{8pt}
-    {\color{LogBorder}\hrule height 0.8pt}
-    \vspace{8pt}
-    \noindent\textbf{\color{LogPrimary}One-Sentence Takeaway:~}
-  }
+    enhanced,
+    breakable=false,
+    colback=LogBackground,
+    colframe=LogPrimary,
+    coltitle=white,
+    fonttitle=\bfseries\Large,
+    before={\phantomsection\addcontentsline{toc}{subsection}{#1}\vspace{0.5em}},
+    % \hypersetup{citecolor=white} forces the citation link to render bright white on the blue banner
+    title={#1 \hfill \normalsize\normalfont\hypersetup{citecolor=white}\textbf{\texttt{\cite{#4}}}},
+    boxrule=1.2pt,
+    arc=5pt,
+    left=14pt, right=14pt, top=10pt, bottom=10pt,
+    before upper={
+        \noindent\textbf{Authors:} #2 \hfill \textbf{Venue:} #3\par
+        \vspace{8pt}
+        {\color{LogBorder}\hrule height 0.8pt}
+        \vspace{8pt}
+        \noindent\textbf{\color{LogPrimary}One-Sentence Takeaway:~}
+    }
 }
 
 % --- 2. KEY INSIGHT CALLOUT BOX ---
 \newtcolorbox{insightbox}[1][Key Insight]{
-  enhanced,
-  breakable,
-  colback=LogPrimary!4!white,
-  colframe=LogPrimary,
-  boxrule=0pt,
-  leftrule=4pt,
-  arc=0pt,
-  left=12pt, right=12pt, top=8pt, bottom=8pt,
-  title={\textbf{#1}},
-  coltitle=LogPrimary,
-  attach title to upper=\par,
-  fonttitle=\bfseries
+    enhanced,
+    breakable,
+    colback=LogPrimary!4!white,
+    colframe=LogPrimary,
+    boxrule=0pt,
+    leftrule=4pt,
+    arc=0pt,
+    left=12pt, right=12pt, top=8pt, bottom=8pt,
+    title={\textbf{#1}},
+    coltitle=LogPrimary,
+    attach title to upper=\par,
+    fonttitle=\bfseries
 }
 
 % --- 3. SECTION SHORTCUT COMMANDS ---
