@@ -1,0 +1,51 @@
+# === LaTeX build artifacts ===
+# Note: If you compile via Overleaf's GitHub sync, these are already
+# excluded automatically. This file is mainly for anyone compiling locally
+# with pdflatex/latexmk.
+
+## Core auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+## Bibliography (biblatex/biber + bibtex)
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+*.bak
+*.brf
+
+## Build tool byproducts
+*.fdb_latexmk
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+## Section/chapter split-compile artifacts (e.g. subfiles)
+*.auxlock
+
+## Generated intermediate/preview files
+*.dvi
+*.xdv
+*.ps
+
+## hyperref / navigation
+*.brf
+*.nav
+*.snm
+*.vrb
+
+## OS/editor cruft
+.DS_Store
+Thumbs.db
+*.swp
