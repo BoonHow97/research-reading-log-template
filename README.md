@@ -20,11 +20,12 @@ Instead of dumping raw notes into a single monolithic document, this template us
 ## Preview
 
 <p align="center">
-  <img src="figures/toc-preview.jpg" width="45%" />
-  <img src="figures/example-page-1.jpg" width="45%" />
+  <img src="figures/toc-preview.png" width="45%" />
+  <img src="figures/example-page-1.png" width="45%" />
 </p>
 
 *Left: the auto-generated Table of Contents. Right: a fully-rendered example entry showing the `paperbox` header, section prompts, and `insightbox` callout.*
+
 
 [View the full compiled example](example/example-output.pdf)
 
