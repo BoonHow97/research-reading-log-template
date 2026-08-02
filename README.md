@@ -54,6 +54,8 @@ Instead of dumping raw notes into a single monolithic document, this template us
 research-reading-log-template/
 ├── LICENSE                       # MIT License
 ├── README.md
+├── example/                      # Full compiled example PDF for reference
+│   └── example-output.pdf
 ├── figures/                      # Store architecture diagrams and plots here
 ├── topics/                       # Modular paper folders grouped by research theme
     ├── 01_foundations/
