@@ -2,6 +2,9 @@
 # Note: If you compile via Overleaf's GitHub sync, these are already
 # excluded automatically. This file is mainly for anyone compiling locally
 # with pdflatex/latexmk.
+#
+# See also: .gitattributes, which forces PDFs/images to be treated as
+# binary so they don't get corrupted by line-ending normalization on sync.
 
 ## Core auxiliary files
 *.aux
@@ -40,7 +43,6 @@
 *.ps
 
 ## hyperref / navigation
-*.brf
 *.nav
 *.snm
 *.vrb

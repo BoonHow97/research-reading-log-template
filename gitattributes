@@ -1,0 +1,11 @@
+# Force Git to treat these as binary files and never modify line endings,
+# regardless of the platform or sync tool (e.g. Overleaf's GitHub sync)
+# pushing them. Prevents silent corruption of PDFs, images, and fonts.
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ttf binary
+*.otf binary
