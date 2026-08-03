@@ -3,17 +3,10 @@
 search_tags.py — Search across all paper notes in topics/ by tag.
 
 Usage:
-    # list every tag in use, with counts
-    python3 search_tags.py
-    
-    # find all papers tagged "literature-review"
-    python3 search_tags.py literature-review
-    
-    # find papers tagged with ALL of these
-    python3 search_tags.py literature-review latex-workflow
-    
-    # find papers tagged with ANY of these
-    python3 search_tags.py --any literature-review latex-workflow  
+    python3 search_tags.py                  # list every tag in use, with counts
+    python3 search_tags.py QROM              # find all papers tagged "QROM"
+    python3 search_tags.py QROM cs2309       # find papers tagged with ALL of these
+    python3 search_tags.py --any QROM cs2309 # find papers tagged with ANY of these
 
 Run this from the repository root (the folder containing topics/).
 """
@@ -30,9 +23,22 @@ TAG_PATTERN = re.compile(r"\\logtags\{([^}]*)\}")
 TITLE_PATTERN = re.compile(r"\\begin\{paperbox\}\s*\{([^}]*)\}")
 
 
+def strip_latex_comments(text: str) -> str:
+    """Remove LaTeX comment lines (anything after an unescaped %) so commented-out
+    example usage (e.g. '% Usage: \\logtags{...}') isn't mistaken for real tags."""
+    cleaned_lines = []
+    for line in text.split("\n"):
+        # Find an unescaped % (not preceded by a backslash)
+        match = re.search(r"(?<!\\)%", line)
+        if match:
+            line = line[: match.start()]
+        cleaned_lines.append(line)
+    return "\n".join(cleaned_lines)
+
+
 def parse_file(path: Path):
     """Return (title, [tags]) for a single .tex file, or (None, []) if no tags found."""
-    text = path.read_text(encoding="utf-8")
+    text = strip_latex_comments(path.read_text(encoding="utf-8"))
 
     tag_match = TAG_PATTERN.search(text)
     if not tag_match or not tag_match.group(1).strip():
